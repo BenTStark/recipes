@@ -1,0 +1,1 @@
+UPDATE recipes.quantity_type SET quantity_type = {0}, abbreviation = {1} WHERE quantity_type_id = {2};

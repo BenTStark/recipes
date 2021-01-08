@@ -1,0 +1,58 @@
+#################
+# General       #
+#################
+env:
+    - {
+          env: WFIF1,
+          schema: { ddns: https://, local: http:// },
+          baseURL: { local: 1.1.113 },
+          buildPath: /../../build,
+      }
+    - {
+          env: WIFI2,
+          schema: { ddns: https://, local: http:// },
+          baseURL: { ddns: mywebsite.ddns.net, local: 8.8.8.8 },
+          buildPath: /../../build,
+      }
+    - {
+          env: prod,
+          schema: { prod: https://, stage: http:// },
+          baseURL: { prod: www.mywebsite.de, stage: www.mywebsite.de },
+          buildPath: /../../build,
+      }
+      
+#################
+# Auth0         #
+#################
+auth0:
+      WFIF1:
+          domain: stkgarching.eu.auth0.com
+          clientId: sjdklfjasölkj
+          audience: http://1.1.1.1
+          callbackUrl: http://1.1.1.1/callback
+      WIFI2:
+            ddns:
+                domain: stkgarching.eu.auth0.com
+                clientId: köjklj
+                audience: https://mywebsite.ddns.net
+                callbackUrl: https://mywebsite.ddns.net /callback
+            local:
+                domain: stkgarching.eu.auth0.com
+                clientId: hkjsdhfkjsdhfk
+                audience: http://8.8.8.8
+                callbackUrl: http://8.8.8.8 /callback
+
+#################
+# Database      #
+#################
+database:
+  hostname: localhost
+  database: stkgarching
+  username: user
+  password: password
+
+##################
+## File system   #
+##################
+path:
+  upload_file_path: /home/miro/workspace/  

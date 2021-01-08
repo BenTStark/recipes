@@ -1,0 +1,1 @@
+INSERT INTO recipes.recipe (name) VALUES ({0});

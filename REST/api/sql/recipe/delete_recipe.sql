@@ -1,0 +1,1 @@
+DELETE FROM recipes.recipe WHERE recipe_id = {0};

@@ -1,0 +1,1 @@
+INSERT INTO recipes.ingredient (name,description) VALUES ({0},{1});

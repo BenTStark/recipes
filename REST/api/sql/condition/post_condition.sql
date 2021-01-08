@@ -1,0 +1,1 @@
+INSERT INTO recipes.condition (name) VALUES ({0});

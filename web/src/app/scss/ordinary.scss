@@ -1,0 +1,48 @@
+.recipeContainer {
+    display: flex; /* or inline-flex */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.recipeHeaderItem {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.recipeHeaderItemEnd {
+    align-self: flex-end;
+}
+
+
+.recipeHeaderPlaceholder {
+    flex-grow: 10;
+}
+
+.inputField {
+    width: 100%;
+};
+
+.inputFile {
+    width: 100%;
+    height: 80 rem;
+};
+
+.dataItem {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+}
+
+
+@media only screen and (min-width:600px) {
+    .InputContainer {
+        flex-direction: row;
+    }
+    .inputField {
+        width: 50%;
+    };
+    
+    .inputFile {
+        width: 50%;
+    };
+}

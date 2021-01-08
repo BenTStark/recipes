@@ -1,0 +1,1 @@
+INSERT INTO recipes.recipe_tag (recipe_id,tag_id) VALUES ({0},{1});

@@ -1,0 +1,1 @@
+SELECT root.f_config ( 'recipes', 'tv_spice_composition' ,  true,  NULL,  NULL,  false,  false);

@@ -1,0 +1,1 @@
+UPDATE recipes.tag SET tag_group = {0}, name = {1} WHERE tag_id = {2};

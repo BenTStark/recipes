@@ -1,0 +1,1 @@
+UPDATE recipes.ingredient SET name = {0}, description = {1} WHERE ingredient_id = {2};

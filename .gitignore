@@ -1,0 +1,10 @@
+**/node_modules
+REST/config.yaml
+**/__pycache__
+*.py[cod]
+web/yarn.lock
+web/stats.json
+web/package_lookup.json
+web/build/
+web/dist/
+**/.vscode
