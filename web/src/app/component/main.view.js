@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./home.view";
 import Ingredients from "./ingredients.view";
 import Administration from "./administration.view";
+import ReactTable from "./reacttable.view";
 
 export class Main extends Component {
   render() {
@@ -12,6 +13,9 @@ export class Main extends Component {
         <Switch>
           <Route exact path="/">
             <Home/>
+          </Route>
+          <Route exact path="/reacttable">
+            <ReactTable/>
           </Route>
           <Route exact path="/administration">
             <Administration/>

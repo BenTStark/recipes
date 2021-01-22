@@ -120,18 +120,11 @@ export class List extends Component {
       url: API_URL + this.props.endpoint,
       data: columns_all
     }).then((response) => {
-      if (this.state.apiPutRefresh) {
+      if (!this.state.apiPutRefresh) {
         this.setState(prevState => {
-          const data = prevState.data.map(item => {
-            var updatedItem = {}
-            if (_.isEqual(_.pick(item,Object.keys(prevState.meta.columns_pk)),_.pick(columns_all,Object.keys(prevState.meta.columns_pk)))) {
-              updatedItem = Object.assign({}, item)
-              for (var key of Object.keys(columns_all)) {
-                updatedItem[key] = columns_all[key]
-              }  
-            }
-            return updatedItem; 
-          });
+          const index = prevState.data.findIndex(item => _.isEqual(_.pick(item,Object.keys(prevState.meta.columns_pk)),_.pick(columns_all,Object.keys(prevState.meta.columns_pk))))
+          var data = Array.from(prevState.data)
+          data[index] = columns_all
           return {
             data,
           };
