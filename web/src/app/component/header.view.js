@@ -11,10 +11,6 @@ export class HeaderView extends Component {
           headerText: "Rezeptliste",
         },
         {
-          link: "/reacttable",
-          headerText: "react-table",
-        },
-        {
           link: "/administration",
           headerText: "Verwaltung",
         }
